@@ -208,7 +208,7 @@
     <!-- Usage Trend Chart -->
     <div class="view-card">
         <!-- Header with Stats and Filter -->
-        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-8">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 mb-8">
             <div class="flex flex-wrap items-center gap-5">
                 <div class="flex items-center gap-2.5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
@@ -237,12 +237,12 @@
                 </div>
             </div>
 
-            <div class="flex items-center gap-3 w-full sm:w-auto justify-end flex-wrap">
+            <div class="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-start sm:justify-end flex-wrap lg:flex-nowrap lg:gap-4 lg:bg-space-900/40 lg:p-1.5 lg:rounded-lg lg:border lg:border-space-border/30 lg:whitespace-nowrap lg:flex-shrink-0">
                 <!-- Time Range Dropdown -->
-                <div class="relative">
+                <div class="relative flex-1 sm:flex-none">
                     <button @click="showTimeRangeDropdown = !showTimeRangeDropdown; showDisplayModeDropdown = false; showModelFilter = false"
-                        class="flex items-center gap-2 px-3 py-1.5 text-[10px] font-mono text-gray-400 bg-space-800 border border-space-border/50 rounded hover:border-neon-cyan/50 transition-colors whitespace-nowrap">
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="flex items-center justify-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 text-[10px] lg:text-xs font-mono font-medium text-gray-400 bg-space-800 lg:bg-transparent border border-space-border/50 lg:border-transparent rounded lg:rounded-md hover:text-white lg:hover:bg-space-800 hover:border-neon-cyan/50 lg:hover:border-neon-cyan/30 lg:hover:shadow-lg lg:hover:shadow-neon-cyan/10 transition-all duration-200 whitespace-nowrap w-full sm:w-auto">
+                        <svg class="w-3.5 h-3.5 lg:w-4 lg:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -278,10 +278,10 @@
                 </div>
 
                 <!-- Display Mode Dropdown -->
-                <div class="relative">
+                <div class="relative flex-1 sm:flex-none">
                     <button @click="showDisplayModeDropdown = !showDisplayModeDropdown; showTimeRangeDropdown = false; showModelFilter = false"
-                        class="flex items-center gap-2 px-3 py-1.5 text-[10px] font-mono text-gray-400 bg-space-800 border border-space-border/50 rounded hover:border-neon-purple/50 transition-colors whitespace-nowrap">
-                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="flex items-center justify-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 text-[10px] lg:text-xs font-mono font-medium text-gray-400 bg-space-800 lg:bg-transparent border border-space-border/50 lg:border-transparent rounded lg:rounded-md hover:text-white lg:hover:bg-space-800 hover:border-neon-purple/50 lg:hover:border-neon-purple/30 lg:hover:shadow-lg lg:hover:shadow-neon-purple/10 transition-all duration-200 whitespace-nowrap w-full sm:w-auto">
+                        <svg class="w-3 h-3 lg:w-4 lg:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                         </svg>
@@ -308,10 +308,10 @@
                 </div>
 
                 <!-- Filter Dropdown -->
-                <div class="relative">
+                <div class="relative flex-1 sm:flex-none min-w-[120px]">
                     <button @click="showModelFilter = !showModelFilter; showTimeRangeDropdown = false; showDisplayModeDropdown = false"
-                        class="flex items-center gap-2 px-3 py-1.5 text-[10px] font-mono text-gray-400 bg-space-800 border border-space-border/50 rounded hover:border-neon-purple/50 transition-colors whitespace-nowrap">
-                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="flex items-center justify-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 text-[10px] lg:text-xs font-mono font-medium text-gray-400 bg-space-800 lg:bg-transparent border border-space-border/50 lg:border-transparent rounded lg:rounded-md hover:text-white lg:hover:bg-space-800 hover:border-neon-purple/50 lg:hover:border-neon-purple/30 lg:hover:shadow-lg lg:hover:shadow-neon-purple/10 transition-all duration-200 whitespace-nowrap w-full sm:w-auto">
+                        <svg class="w-3 h-3 lg:w-4 lg:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                         </svg>
